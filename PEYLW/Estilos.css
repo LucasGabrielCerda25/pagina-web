@@ -1,0 +1,96 @@
+body{
+    margin:0;padding:0;width:100%;
+    background-image: url(bg.jpg);background-repeat: no-repeat;
+    background-position: center; background-size:cover;background-attachment: fixed;
+}
+ul{padding-left: 0;}
+header
+    {
+    position:relative;padding:0;height:auto;
+    }
+.headerWrap2
+    {
+    display:flex;flex-direction: row;flex-wrap: nowrap;
+    object-fit: scale-down;background-color: black;
+    justify-content: space-between;
+    border-bottom: 1vw solid;
+    margin-bottom: 3vw;
+    border-image: url(bg_line_horizontal.webp) 130 stretch;border-image-outset: 2.5;border-image-width: 6;
+    }
+.MenuSelector1
+    {
+    display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;
+    align-items:end;height:auto;max-width: 100%;float:right;margin:0 0 5vw 0;padding:0;
+    }
+.NavHeading
+    {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding: 0 0.5rem;
+    size:100%;
+    float: right;
+    }
+.navLink1
+    {
+    color:whitesmoke;text-decoration: none;
+    padding-bottom:10px;font-family: "symphoBoldItalic";
+    font-size: 3vw;text-align: justify;
+    }
+.navLink1:hover
+    {
+    color:red;
+    }
+.logo1
+    {
+        max-width: 25vw;height: auto;width:auto;
+    }
+@font-face 
+    {
+    font-family: "symphoBoldItalic";
+    src: url(fonts/Whitestone\ Bold\ Italic.otf)
+    }
+@media screen and (max-width:550px)
+    {
+    .MenuSelector1
+        {
+        flex: 2; flex-wrap:wrap;
+        width:auto;
+        }
+    .logo1
+        {
+        width: auto;max-width: 90%;margin-left:10%;overflow: hidden;
+        }
+    .navLink1
+        {
+        font-size: 140%;margin-left: 3vw;margin-right: 3vw;
+        }
+    .headerWrap2
+        {
+        flex-direction:column;flex-wrap: nowrap;
+        }
+    }
+.paragraph
+    {
+    position:relative;height: 400vw;
+    }
+footer
+{
+    background-color: black;
+    border-bottom: 5vw solid;
+    border-image: url(bg_line_horizontal.webp) 120 round;border-image-outset: 2vw; -webkit-transform: scaleY(-1);
+    transform: scaleY(-1); bottom: 0; position: sticky; 
+}
+.footerWrap1
+{
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    display:flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; text-align: justify;
+    background-color: black;
+}
+.footerSelect1
+{
+    padding: 0 5vw;
+}
